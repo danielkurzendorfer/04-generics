@@ -68,9 +68,9 @@ public class SimpleListImpl<T> implements SimpleList<T> {
 	 * Helper class which implements the Iterator<T> interface
 	 * Has to be non static because otherwise it could not access the head of the list
 	 */
-	private class SimpleIterator<T> implements Iterator<T> {
+	private class SimpleIterator implements Iterator<T> {
 
-		private ListElement<T> current = (ListElement<T>) head;
+		private ListElement<T> current = head;
 
 		/**
 		 * @inheritDoc
